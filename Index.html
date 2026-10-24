@@ -1,0 +1,174 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#400b20">
+<title>Saketh & Likitha Yamini | Engagement</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Great+Vibes&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--gold:#eac77d;--wine:#450d24;--cream:#fff0d2}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#210711;color:var(--cream);font-family:"Playfair Display",Georgia,serif;text-align:center}
+button,.btn{cursor:pointer;border:1px solid var(--gold);border-radius:30px;background:linear-gradient(120deg,#b7893f,#ffe1a0);color:#35101b;padding:14px 24px;text-decoration:none;font:600 12px Cinzel,serif;letter-spacing:1px;display:inline-block;margin:8px}
+#intro{position:fixed;inset:0;z-index:10;display:grid;place-items:center;background:#250711;transition:opacity 1s,visibility 1s}
+#intro.hide{opacity:0;visibility:hidden;pointer-events:none}
+.doors{position:absolute;inset:0;display:flex;overflow:hidden}
+.door{width:50%;height:100%;border:5px double var(--gold);background:repeating-linear-gradient(90deg,transparent 0 30px,#d9b56935 32px,transparent 35px 70px),linear-gradient(130deg,#68152e,#310918);transition:transform 1.6s ease}
+.left{border-right:2px solid var(--gold)}
+.right{border-left:2px solid var(--gold)}
+#intro.open .left{transform:translateX(-105%)}
+#intro.open .right{transform:translateX(105%)}
+.welcome{position:relative;z-index:2;padding:20px;transition:opacity .4s}
+#intro.open .welcome{opacity:0}
+.monogram{font:60px Cinzel,serif;color:var(--gold)}
+.welcome h2{font:600 17px/2 Cinzel,serif;letter-spacing:2px}
+.page{max-width:850px;margin:auto;background:radial-gradient(ellipse at 50% 25%,#80283f,transparent 65%),linear-gradient(#4b0b23,#250711)}
+.hero{min-height:100svh;padding:65px 22px;display:flex;flex-direction:column;justify-content:center;align-items:center}
+.frame{width:100%;max-width:650px;padding:50px 16px;border:2px solid var(--gold);outline:1px solid #c99d58;outline-offset:-11px;position:relative;background:#ffffff05;box-shadow:0 0 50px #0004}
+.ornament{font-size:35px;color:var(--gold);margin:10px}
+.eyebrow{font:12px Cinzel,serif;letter-spacing:3px;line-height:2}
+h1{font:600 clamp(20px,5vw,32px) Cinzel,serif;color:var(--gold);line-height:1.6}
+.names{font:clamp(54px,13vw,95px) "Great Vibes",cursive;color:#ffe3a6;line-height:1.1;margin:35px 0 12px}
+.amp{font:35px "Great Vibes",cursive;color:var(--gold)}
+.subtitle{font-size:17px;line-height:1.9}
+.date{font:600 clamp(19px,5vw,29px) Cinzel,serif;color:var(--gold);margin:30px 0 10px}
+section{padding:70px 24px;border-top:1px solid #b68a4a55}
+h2{font:600 clamp(22px,5vw,30px) Cinzel,serif;color:var(--gold);line-height:1.5}
+p{line-height:1.9}
+.gold{color:var(--gold)}
+.divider{color:var(--gold);font-size:25px;margin:20px}
+.countdown{display:flex;justify-content:center;gap:9px;flex-wrap:wrap;margin:30px 0}
+.unit{min-width:75px;border:1px solid #d4a95888;padding:15px 10px;background:#ffffff08}
+.num{display:block;font:600 27px Cinzel,serif;color:var(--gold)}
+.unit small{font-size:10px;letter-spacing:1px;text-transform:uppercase}
+.venue{font-size:21px;color:var(--gold)}
+.footer{padding:45px 20px;color:#e4c18a;font-size:13px}
+@media(max-width:420px){.frame{padding:45px 12px}.names{font-size:62px}.unit{min-width:65px;padding:12px 7px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+
+<div id="intro">
+  <div class="doors">
+    <div class="door left"></div>
+    <div class="door right"></div>
+  </div>
+  <div class="welcome">
+    <div class="monogram">S ♡ Y</div>
+    <h2>A Royal Celebration<br>of Love</h2>
+    <p>You're cordially invited</p>
+    <button id="openBtn">Open Invitation ✨</button>
+  </div>
+</div>
+
+<main class="page">
+  <div class="hero">
+    <div class="frame">
+      <div class="ornament">❦</div>
+      <div class="eyebrow">WITH LOVE AND BLESSINGS</div>
+      <h1>Konijarla's<br>Engagement Ceremony</h1>
+      <p>Two hearts, one beautiful beginning</p>
+      <div class="names">
+        Saketh
+        <div class="amp">&</div>
+        Likitha Yamini
+      </div>
+      <div class="divider">✦ ❦ ✦</div>
+      <p class="subtitle">Together with our families,<br>we invite you to celebrate<br>our engagement</p>
+      <div class="date">01 • 11 • 2026</div>
+      <p>Sunday | 10:00 AM</p>
+      <div class="ornament">❦</div>
+      <a class="btn" href="#details">View Celebration ↓</a>
+    </div>
+  </div>
+
+  <section id="details">
+    <div class="ornament">❦</div>
+    <h2>Save the Date</h2>
+    <p>With the blessings of our elders and the love of our families, we begin a beautiful journey together.</p>
+    <div class="date">Sunday, 1 November 2026</div>
+    <p class="gold">10:00 AM onwards</p>
+    <div class="divider">✦ ❦ ✦</div>
+    <h2>Counting Down to Forever</h2>
+    <div class="countdown" id="countdown">
+      <div class="unit"><span class="num" id="days">--</span><small>Days</small></div>
+      <div class="unit"><span class="num" id="hours">--</span><small>Hours</small></div>
+      <div class="unit"><span class="num" id="minutes">--</span><small>Minutes</small></div>
+      <div class="unit"><span class="num" id="seconds">--</span><small>Seconds</small></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="ornament">❦</div>
+    <h2>The Celebration Venue</h2>
+    <p class="venue">J Convention</p>
+    <p>Sathupally, Near Ramalayam<br>Telangana, India</p>
+    <a class="btn" target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/search/?api=1&query=J%20Convention%20Sathupally%20Near%20Ramalayam">Get Directions ↗</a>
+    <p style="font-size:12px;opacity:.8">Please confirm the venue location on the map before travelling.</p>
+  </section>
+
+  <section>
+    <div class="ornament">❦</div>
+    <h2>With Warm Regards</h2>
+    <p>We joyfully invite you to grace the occasion with your presence and blessings.</p>
+    <p class="venue">Konijarla Ramakrishna<br>& Kavitha</p>
+    <p>Your presence will make our celebration even more memorable.</p>
+    <div class="divider">✦ ❦ ✦</div>
+    <button id="shareBtn">Share Invitation ♡</button>
+    <button id="calendarBtn">Add to Calendar</button>
+  </section>
+
+  <footer class="footer">
+    <div class="names" style="font-size:43px">Saketh & Yamini</div>
+    <p>Made with love • 01.11.2026</p>
+  </footer>
+</main>
+
+<script>
+const intro=document.getElementById("intro");
+document.getElementById("openBtn").addEventListener("click",()=>{
+  intro.classList.add("open");
+  setTimeout(()=>intro.classList.add("hide"),1700);
+});
+
+const target=new Date("2026-11-01T10:00:00+05:30").getTime();
+function updateCountdown(){
+  const diff=Math.max(0,target-Date.now());
+  const days=Math.floor(diff/86400000);
+  const hours=Math.floor(diff/3600000)%24;
+  const minutes=Math.floor(diff/60000)%60;
+  const seconds=Math.floor(diff/1000)%60;
+  document.getElementById("days").textContent=days;
+  document.getElementById("hours").textContent=String(hours).padStart(2,"0");
+  document.getElementById("minutes").textContent=String(minutes).padStart(2,"0");
+  document.getElementById("seconds").textContent=String(seconds).padStart(2,"0");
+}
+updateCountdown();
+setInterval(updateCountdown,1000);
+
+document.getElementById("shareBtn").addEventListener("click",async()=>{
+  const message="You're invited to Saketh & Likitha Yamini's Engagement! ❤️\n1 November 2026, 10:00 AM\nJ Convention, Sathupally, Near Ramalayam.\n"+location.href;
+  if(navigator.share){
+    try{await navigator.share({title:"Engagement Invitation",text:message});return}catch(e){}
+  }
+  window.open("https://wa.me/?text="+encodeURIComponent(message),"_blank","noopener,noreferrer");
+});
+
+document.getElementById("calendarBtn").addEventListener("click",()=>{
+  const title="Saketh & Likitha Yamini Engagement";
+  const details="Konijarla's Engagement Ceremony. Invited by Konijarla Ramakrishna & Kavitha.";
+  const place="J Convention, Sathupally, Near Ramalayam, Telangana";
+  const url="https://calendar.google.com/calendar/render?action=TEMPLATE"+
+    "&text="+encodeURIComponent(title)+
+    "&dates=20261101T043000Z/20261101T063000Z"+
+    "&details="+encodeURIComponent(details)+
+    "&location="+encodeURIComponent(place);
+  window.open(url,"_blank","noopener,noreferrer");
+});
+</script>
+</body>
+</html>
